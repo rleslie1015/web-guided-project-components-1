@@ -9,7 +9,8 @@ const imageData = [
   { imageURL: "https://images.dog.ceo/breeds/mastiff-bull/n02108422_2947.jpg" },
 ];
 
-function makeImage({ imageURL }) {
+// the component is an image that takes some raw data
+function makeImage({ imageURL }) { // 
   const imgElement = document.createElement("img");
   imgElement.style.width = "10em";
   imgElement.src = imageURL;

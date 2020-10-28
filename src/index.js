@@ -17,12 +17,12 @@ function makeImage({ imageURL }) { // destructuring syntax
   return imgElement; // always return!
 }
 
-// 
+// loop where we use the component!
 imageData.forEach((imgObj) => {
   // 1 - make an image
-  const img = makeImage(imgObj);
+  const img = makeImage(imgObj); // invoke component maker
   // 2 - attach it to the DOM
-  document.body.prepend(img);
+  document.body.prepend(img); // attach to DOM
 });
 
 // TASK 1- Import the data we need to "hydrate" our component.

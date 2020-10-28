@@ -80,7 +80,7 @@ function makePanel({ title, content } /* what data does the panel need? */) {
   // paying attention to the elements that need to start out hidden
   panel.classList.add("panel");
   panelBar.classList.add("panel-bar");
-  panelContent.classList.add("panel-content", "toggle-on");
+  panelContent.classList.add("panel-content");
   panelButtons.classList.add("panel-buttons");
   openButton.classList.add("panel-btn-open");
   closeButton.classList.add("panel-btn-close", "hide-btn");

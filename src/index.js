@@ -94,7 +94,7 @@ function makePanel({ title, content } /* what data does the panel need? */) {
   //  - the contents need to show (the 'toggle-on' class name controls this)
 
   // don't forget to return the panel!
-  return null;
+  return panel;
 }
 makePanel({ title: "test title", content: "test content" });
 

@@ -10,7 +10,8 @@ const imageData = [
 ];
 
 // the component is an image that takes some raw data
-function makeImage({ imageURL }) { // destructuring syntax
+function makeImage({ imageURL }) {
+  // destructuring syntax
   const imgElement = document.createElement("img"); // make a detatched img tag
   imgElement.style.width = "10em"; // set the width property
   imgElement.src = imageURL; // src property to become the image we passed in
@@ -30,7 +31,7 @@ imageData.forEach((imgObj) => {
 //  On the other hand, the default export from data/constants.js
 //  Destructure `open` and `close` from the constants
 
-import panelData from './data/panelData.js'
+import panelData from "./data/panelData";
 
 // TASK 2- Verify our imports using log statements
 console.log(); // log the panelData

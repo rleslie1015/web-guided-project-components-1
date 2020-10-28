@@ -11,9 +11,9 @@ const imageData = [
 
 // the component is an image that takes some raw data
 function makeImage({ imageURL }) { // destructuring syntax
-  const imgElement = document.createElement("img"); // 
-  imgElement.style.width = "10em";
-  imgElement.src = imageURL;
+  const imgElement = document.createElement("img"); // make a detatched img tag
+  imgElement.style.width = "10em"; // set the width property
+  imgElement.src = imageURL; // src property to become the image we passed in
   return imgElement;
 }
 

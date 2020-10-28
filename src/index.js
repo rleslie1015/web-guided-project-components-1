@@ -17,7 +17,8 @@ function makeImage({ imageURL }) {
 }
 
 imageData.forEach(imgObj => {
-  
+  // 1 - make an image
+  // 2 - attach it to the DOM
 })
 
 // TASK 1- Import the data we need to "hydrate" our component.

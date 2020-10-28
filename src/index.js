@@ -10,8 +10,8 @@ const imageData = [
 ];
 
 // the component is an image that takes some raw data
-function makeImage({ imageURL }) { // 
-  const imgElement = document.createElement("img");
+function makeImage({ imageURL }) { // destructuring syntax
+  const imgElement = document.createElement("img"); // 
   imgElement.style.width = "10em";
   imgElement.src = imageURL;
   return imgElement;

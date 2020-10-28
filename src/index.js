@@ -103,7 +103,8 @@ panelButtons.addEventListener('click', (event) => {
   // don't forget to return the panel!
   return panel;
 }
-makePanel({ title: "test title", content: "test content" });
+const test = makePanel({ title: "test title", content: "test content" });
+
 
 // TASK 10- Loop through the panelData we imported from the data folder
 //  creating panels for each content and title and append them to the DOM.

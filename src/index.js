@@ -14,9 +14,10 @@ function makeImage({ imageURL }) { // destructuring syntax
   const imgElement = document.createElement("img"); // make a detatched img tag
   imgElement.style.width = "10em"; // set the width property
   imgElement.src = imageURL; // src property to become the image we passed in
-  return imgElement;
+  return imgElement; // always return!
 }
 
+// 
 imageData.forEach((imgObj) => {
   // 1 - make an image
   const img = makeImage(imgObj);

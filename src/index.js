@@ -113,8 +113,12 @@ accordion.appendChild(test);
 //  We can do this with a single forEach, or with a map and a forEach.
 
 const panelElement = panelData.map((panelData) => {
-  
-})
+  return makePanel(panelData);
+});
+
+panelElement.forEach((panelElement => {
+  accordion
+}))
 
 // [STRETCH] Comment out the links inside the nav and
 // write a linkMaker that takes { href, className, text }

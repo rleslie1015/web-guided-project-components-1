@@ -18,7 +18,7 @@ function makeImage({ imageURL }) {
 
 imageData.forEach((imgObj) => {
   // 1 - make an image
-  const img = makeImage();
+  const img = makeImage(imgObj);
   // 2 - attach it to the DOM
   document.body.prepend(img);
 });

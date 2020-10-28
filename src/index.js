@@ -16,11 +16,12 @@ function makeImage({ imageURL }) {
   return imgElement;
 }
 
-imageData.forEach(imgObj => {
+imageData.forEach((imgObj) => {
   // 1 - make an image
-  const img = makeImage()
+  const img = makeImage();
   // 2 - attach it to the DOM
-})
+  document.body.prepend(img);
+});
 
 // TASK 1- Import the data we need to "hydrate" our component.
 //  On the one hand, the default export from data/panelData.js

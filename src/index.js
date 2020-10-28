@@ -8,7 +8,7 @@ const imageData = [
 ]
 
 function makeImage({ imageURL }) {
-
+  const imgElement 
 }
 
 // TASK 1- Import the data we need to "hydrate" our component.

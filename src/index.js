@@ -45,7 +45,7 @@ console.log(arrows.close); // log the close arrow
 const accordion = document.querySelector(".accordion");
 
 // TASK 4- Create a function 'makePanel' that creates a panel exactly as you see it in the HTML.
-function makePanel(title, content /* what data does the panel need? */) {
+function makePanel({ title, content } /* what data does the panel need? */) {
   // TASK 5- Instantiate all the elements needed for a panel
   const panel = null;
   const panelBar = null;

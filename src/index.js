@@ -99,7 +99,8 @@ function makePanel({ title, content } /* what data does the panel need? */) {
 
   panelButtons.addEventListener("click", (event) => {
     openButton.classList.toggle("hide-btn");
-    closeButton.classList.toggle(hide)
+    closeButton.classList.toggle("hide-btn");
+    panelContent.classList.toggle("toggle-on");
   });
   // don't forget to return the panel!
   return panel;

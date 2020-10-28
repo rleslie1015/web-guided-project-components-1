@@ -58,8 +58,9 @@ function makePanel({ title, content } /* what data does the panel need? */) {
   // TASK 6- Setup the structure of our elements
   panel.appendChild(panelBar);
   panel.appendChild(panelContent);
-  panel.appendChild(panelTitle);
-  panel.appendChild(panelButtons);
+
+  panelBar.appendChild(panelTitle);
+  panelBar.appendChild(panelButtons);
   panel.appendChild(openButton);
   panel.appendChild(closeButton);
 

@@ -27,6 +27,7 @@ imageData.map(data => {
 //  Destructure `open` and `close` from the constants
 import panelData from './data/panelData';
 import constants from './data/constants';
+import linkData from './data/linkData';
 const {open, close} = constants;
 
 // TASK 2- Verify our imports using log statements
@@ -123,3 +124,17 @@ panelData.map((data) => {
 // and returns an anchor tag with the right href, class and textContent.
 // Loop over the 'linkData' in the data folder, generate anchor tags
 // and append them to the nav.
+const makeLink = ({href, className, text}) => {
+  const link = document.createElement('a')
+  link.href = href
+  link.className = className
+  link.textContent = text
+  return link
+}
+
+const nav = document.querySelector('.main-nav')
+
+linkData.map(data => {
+  const link = makeLink(data)
+  nav.append(link)
+})
